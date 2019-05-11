@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+     <head>
+          <meta charset="utf-8">
+          <title>Git tutorial</title>
+
+    </head>
+    <body>
+          <p>
+                <h2>What is Git and Github?</h2>
+               <ul>
+                    <li>Git is a distributed version-control system for tracking changes in source code during software development.  </li>
+                    <li> GitHub is a web-based hosting service for version control using Git. </li>
+              </ul>
+          </p> 
+
+
+           <p>
+         <h2> Refesh on thr basis Linux commands </h2>
+<ul>
+    <li><strong>  pwd </strong> to check your repository </li>
+      <li><strong>  ls </strong>to list your repository files</li>
+<li><strong>cd </strong> to change the parent directory</li>
+<li><strong>cd < directory ></strong> to change to a directory</li>
+<li><strong>touch < file ></strong> to creat a file</li>
+<li><strong>mkdir < directory > </strong> to make a directory </li>
+<li><strong>cat < file > </strong> to open a file </li>
+</ul>    
+<h2> Basis Git commands </h2>
+     <ul>
+       <li><strong>git config --global user.name "Votre nom ou pseudo" </strong> </li>
+       <li><strong> git config --global user.email "Votre@email.com" </strong>  </li>
+    to create an account and an email which will be also use for Github. 
+    </ul>  
+<ul>  
+<li><strong>git add < file > </strong>  to add a file</li>
+<li><strong>git add .  </strong>   to add all files in the repository</li>
+<li><strong>git status   </strong>  to get the status of your Git</li>
+<li><strong> git commit -m “message”  </strong>   to register modifications in Git </li>
+<li><strong>git commit -a -m “message”  </strong>   with -a you update an already existing file in Git (Add all the files already in the index to commit) </li>
+<li><strong>git log </strong>   to see the history of all commit</li>
+<li><strong>git checkout < SHADuCommit > </strong>   to position yourself on a given commit of your history </li> 
+<li><strong>git checkout master  </strong>   to go back to the main branch (this is the most recent commit) </li>
+<li><strong> git revert < SHADuCommit > </strong>  to create a new commit that is the opposite of the previous</li>
+<li><strong>git commit --amend -m “message” </strong>  to modify the message of the last commit</li>
+<li><strong>git reset --hard  </strong>  to cancel the change made if the commit has not already commited</li>
+<li><strong>git clone < HTTPS-link-Github > </strong>  to add HTTPS-link from Github</li>
+<li><strong>git push origin master </strong>   to send changes to your GitHub repository</li>
+<li><strong>git pull origin master  </strong>  to retrieve locally(from Github to your computer) the last changes in the repository GitHub </li>
+</ul>  
+<ul>  
+   <li><strong> vim < file > </strong>  can help you to edit your file </li>
+</ul>      
+  </p>
+
+     <footer>     
+         <p><a href = “https://github.com/fokoo/demo_git_github” > Github link of the repository where you can find this page in document </a></p>
+    </footer>
+
+   </body>
+
+</html>
+
