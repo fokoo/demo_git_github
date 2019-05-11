@@ -1,0 +1,9 @@
+Hello!.
+this is vim text edito.
+
+vim filename to open file
+i to insert
+esc to exit insert mode
+:w to save
+:q to quit 
+:wq to save and quit
