@@ -34,35 +34,61 @@
     </ul>  
 <ul>  
 <li><strong>git add < file > </strong>  to add a file</li>
-<li><strong>git add .  </strong>   to add all files in the repository</li>
+<li><strong>git add . </strong> to add all files in the repository</li>
 <li><strong>git status   </strong>  to get the status of your Git</li>
-<li><strong> git commit -m “message”  </strong>   to register modifications in Git </li>
-<li><strong>git commit -a -m “message”  </strong>   with -a you update an already existing file in Git (Add all the files already in the index to commit) </li>
-<li><strong>git log </strong>   to see the history of all commit</li>
+<li><strong>git commit -m “message”  </strong>   to register modifications in Git </li>
+<li><strong>git commit -a -m “message”  </strong>   with -a you update an already existing file in Git (Add all the files already in the index and commit them) </li>
+<li><strong>git log </strong> to see the history of all commit</li>
 <li><strong>git checkout < SHADuCommit > </strong>   to position yourself on a given commit of your history </li> 
 <li><strong>git checkout master  </strong>   to go back to the main branch (this is the most recent commit) </li>
-<li><strong> git revert < SHADuCommit > </strong>  to create a new commit that is the opposite of the previous</li>
+<li><strong>git revert < SHADuCommit > </strong>  to create a new commit that is the opposite of the previous</li>
 <li><strong>git commit --amend -m “message” </strong>  to modify the message of the last commit</li>
 <li><strong>git reset --hard  </strong>  to cancel the change made if the commit has not already commited</li>
 <li><strong>git clone < HTTPS-link-Github > </strong>  to add/download a project via a HTTPS-link from GitHub to the local machine</li>
-<li><strong>git push origin master </strong>   to send changes to your GitHub repository</li>
-<li><strong>git pull origin master  </strong>  to retrieve locally(from Github to your computer) the last changes in the repository GitHub </li>
+<li><strong>git push origin master </strong> to send changes to your GitHub repository</li>
+<li><strong>git pull origin master  </strong> to retrieve locally(from Github to your computer) the last changes in the repository GitHub </li>
+<li><strong>git branch </strong>  to see all your branches</li>
+<li><strong>git branch [ name_of_new_branch ] </strong> to create a new branch </li>
+<li><strong>git checkout [ branch_name ] </strong> to position yourself in branch (branch-name) in your repo. </li>
+<li><strong>git checkout -b [ branch_name ] </strong> to group the two previous commands in one command </li>
+<li><strong>git merge < another_branch > </strong> to add to the current branch the changes you made in another branch (another_branch). This will put modifications in another in current</li>
+
+<li><strong>git mergetool vimdiff </strong> tool to solve merge conflits. Conflits can also be resolve manually. commit after resoltion of  conflits. No need of commit message, git provide message for conflits</li>
+<li><strong>git blame < file > </strong> it's a more direct way to find out who made a particular change in a file</li>
+<li><strong>git show < SHA > </strong>   to directly obtain the details of the desired commit by entering the beginning of its sha (sha got with git blame).
+Ex.: git show 05b1233 </li> 
+
+<li><strong>git stash </strong> to save the current changes (version not save) without any commit, in order to be able to return to the latest version to commit or even to change branch. </li>
+<li><strong>git stash pop</strong> to return to the branch/file where you were before doing 'git stash', in order to finish and commit your changes. Be careful, pop empties the stash </li>
+<li><strong>git stash apply</strong> if you want to keep the changes in your stash, you can use apply instead of pop </li>
 </ul>
 
 <ul>
-  <li><strong> fork </strong> on Githup to copy a project to his own Githup repository
+  <li><strong> fork </strong> on Githup to copy a project to his own Githup repository </li>
 </ul>  
+
+<h3>Contributing: Example</h3>
+<ul>
+  <li>1. Fork it</li>
+  <li>2. Create your feature branch (git checkout -b my-new-feature)</li>
+  <li>3. Commit your changes (git commit -am 'Add some feature')</li>
+  <li>4. Push to the branch (git push origin my-new-feature)</li>
+  <li>5. Create new Pull Request: that is to propose a modification to a project hosted on GitHub (per message using create pull request on GitHub)</li>
+</ul>
 
 <ul>  
    <li><strong> vim < file > </strong>  can help you to edit your file </li>
+   <li><strong> touch .gitignore </strong>creates a gitignore file. This file contains the (names) files to ignore.
+    To ignore a file (the configuration file for example) by Git or adding it to the .gitignore file. </li>
 </ul>      
   </p>
 
      <footer>  
+
          <a href="https://www.html-seminar.de/">Beschriftung</a> <br>
          <a href="https://guides.github.com/activities/hello-world/">GitHup Guide</a>  <br>
          <a href="https://github.com/fokoo/demo_git_github" target=''_blank''> Click here to open the links to the Github repository where you can find this page in document </a>
-          
+         <a href="https://www.atlassian.com/git/tutorials/saving-changes">BitBucket</a> 
     </footer>
 
    </body>
